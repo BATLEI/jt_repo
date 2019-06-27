@@ -11,5 +11,6 @@ public class SpringBoot_Run {
 	public static void main(String[] args) {
 		
 		SpringApplication.run(SpringBoot_Run.class, args);
+		
 	}
 }
