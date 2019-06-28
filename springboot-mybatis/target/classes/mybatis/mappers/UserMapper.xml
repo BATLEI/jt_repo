@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.jt.mapper.UserMapper">
+	
+	<!--resultType中缺少包路径 后期补充  -->
+	<select id="findAll" resultType="User">
+		select * from user
+	</select>
+	
+	<!-- <insert id="insertUser">
+		insert into user values(null,#{name},#{age},#{sex})
+	</insert> -->
+	
+	<!-- <update id="updateUser">
+		update user set name=#{name} where age=#{age}
+	</update> -->
+	
+	
+	
+	
+	
+	
+</mapper>
