@@ -1,0 +1,31 @@
+server:
+  port: 8090
+  servlet:    context-path: /
+
+#引入数据源配置
+spring:  datasource:
+    #引入druid数据源
+    type: com.alibaba.druid.pool.DruidDataSource    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/jtdb?serverTimezone=GMT%2B8&useUnicode=true&characterEncoding=utf8&autoReconnect=true&allowMultiQueries=true
+    username: root
+    password: 123456
+#mybatis-plush配置
+mybatis-plus:
+  #配置别名包
+  type-aliases-package: com.jt.pojo
+  #配置mapper映射
+  mapper-locations: classpath:/mybatis/mappers/*.xml
+  #开启驼峰映射
+  configuration:
+    map-underscore-to-camel-case: true
+    
+#添加日志输出
+logging:  level:    com.jt.mapper: debug 
+    
+    
+    
+    
+    
+    
+    
+  
